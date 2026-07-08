@@ -2,7 +2,8 @@
  * Autor: Aimar Rollán-González | Investigador Independiente
  * ORCID: https://orcid.org/0009-0005-2969-1006
  * Disponibilidad del código: https://github.com/Aimarus22/etl-can
- * Fecha: Jun 2026
+ * Fecha: Jul 2026
+   
 Abstract:
 Un pipeline de datos donde la información fragmentada se encuentra con el orden relacional. Aquí, 15 años históricos de contaminación atmosférica se codifican en un esquema en estrella bajo la filosofía Tidy Data.
 Keywords: Data Engineering, ETL, Tidy Data, Python, Open Data, Air Quality
