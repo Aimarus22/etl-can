@@ -6,6 +6,7 @@
    
 Abstract:
 Un pipeline de datos donde la información fragmentada se encuentra con el orden relacional. Aquí, 15 años históricos de contaminación atmosférica se codifican en un esquema en estrella bajo la filosofía Tidy Data.
+
 Keywords: Data Engineering, ETL, Tidy Data, Python, Open Data, Air Quality
 ## Disponibilidad de los Datos (Zenodo)
 Este repositorio de GitHub aloja exclusivamente el código fuente (scripts Python) de la arquitectura ETL y de auditoría. Las matrices de datos resultantes en formato abierto .csv (incluyendo la tabla de hechos con ~8,3 millones de registros y las tablas de dimensiones) se encuentran publicadas y versionadas en Zenodo para su descarga:
@@ -20,7 +21,7 @@ Para estructurar esta asimetría original, invocamos al núcleo del proyecto: et
 ### Fase III: El guardián de la integridad
 Existe una frontera donde los datos mal formados prohíben el análisis. Definimos el script qc_navarra_aqh_2011_2025.py como un escáner de flujo de bajo consumo.
 Incapaz de saturar la RAM, este guardián lee el archivo maestro línea por línea emulando herramientas de consola bash. Valida la geometría estricta de 5 columnas y asegura que ninguna clave relacional esté vacía antes de declarar el archivo apto para producción.
-## El lienzo ejecutable pydroidiano
+## Scripts 
 Para atestiguar la transformación estructural de millones de registros, los scripts se encuentran en la raíz de este repositorio.
 Puedes invocar la curación clonando este repositorio y ejecutando los scripts desde tu terminal en este orden estricto:
 ```bash
