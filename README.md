@@ -10,7 +10,7 @@ Un pipeline de datos donde la información fragmentada se encuentra con el orden
 Keywords: Data Engineering, ETL, Tidy Data, Python, Open Data, Air Quality
 ## Disponibilidad de los Datos (Zenodo)
 Este repositorio de GitHub aloja exclusivamente el código fuente (scripts Python) de la arquitectura ETL y de auditoría. Las matrices de datos resultantes en formato abierto .csv (incluyendo la tabla de hechos con ~8,3 millones de registros y las tablas de dimensiones) se encuentran publicadas y versionadas en Zenodo para su descarga:
-👉 **[Base de datos histórica de calidad del aire en Navarra (2011-2025)] (https://doi.org/10.5281/zenodo.)**
+👉 **[Base de datos histórica de calidad del aire en Navarra (2011-2025)] (https://doi.org/10.5281/zenodo.21270385)**
 ### Fase I: La topología de la auditoría
 Antes de transformar, es necesario comprender el caos. El script audit_headers_navarra_aqh_2011_2025.py actúa como un escáner previo. Su único propósito es mirar los 149 archivos en crudo y extraer sus cabeceras sin saturar la memoria, utilizando una lectura superficial (nrows=0) para mapear las variables detectadas.
 ### Fase II: El motor de transformación
